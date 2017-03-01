@@ -5,7 +5,7 @@ html {
 }
 
 @font-face {
-    font-family: myFirstFont;
+    font-family: logoFont;
     src: url('font/Melancholight Italic.ttf');
 }
 
@@ -22,7 +22,7 @@ html {
 
 /*HOME PAGE*/
 
-#homePage {
+.homePage {
     position: relative;
     height: 100%;
     background: rgba(5, 54, 249, 1);
@@ -36,7 +36,7 @@ html {
     opacity: 0.5;
 }
 
-#homePage .footer {
+.homePage .footer {
     position: absolute;
     height: 100%;
     width: 100%;
@@ -45,20 +45,42 @@ html {
 .footer>h1 {
     margin-top: 13%;
     font-size: 150px;
-    font-family: myFirstFont;
+    font-family: logoFont;
 }
 
-.footer>footer {
+.footer>a {
     position: absolute;
     bottom: 8%;
     left: 0;
     right: 0;
+    color: white;
 }
 
-.footer>footer:hover {
+.footer>a:hover {
     cursor: pointer;
+    text-decoration: none;
+    color: grey;
 }
 
-.footer>footer>.glyphicon {
+.footer>a>.glyphicon {
     font-size: 20px;
 }
+
+
+/*MAIN PAGE*/
+
+.navbar-brand {
+    font-family: logoFont;
+    font-size: 37px!important;
+    padding-top: 13px!important;
+}
+
+
+/*.navLight {
+    height: 4px;
+    width: 4px;
+    background-color: red;
+    border-radius: 100%;
+    float: right;
+    margin-top: 10px;
+}*/

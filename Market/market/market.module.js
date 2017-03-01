@@ -1,3 +1,6 @@
-angular.module('market',[
-    'marketHome'
+angular.module('market', [
+    'ngRoute',
+    'marketHome',
+    'marketMain'
+
 ]);
