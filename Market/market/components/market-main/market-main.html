@@ -14,10 +14,18 @@
         <!-- Collect the nav links, forms, and other content for toggling -->
         <div class="collapse navbar-collapse navbar-right" id="navbarCollapse">
             <ul class="nav navbar-nav">
-                <li activ-li class="active"><a ng-click="selectType=''" href="">All Cameras</a> </li>
-                <li activ-li><a ng-click="selectType='DSLR'" href="">DSLR Cameras</a></li>
-                <li activ-li><a ng-click="selectType='compact'" href="">Compact Digital Cameras</a></li>
-                <li activ-li><a ng-click="selectType='MIRRORLESS'" href="">Mirrorless Cameras</a></li>
+                <li ng-class="(selectType=='')? 'active': ''">
+                    <a ng-click="selectType=''" href="">All Cameras</a>
+                </li>
+                <li ng-class="(selectType=='DSLR')? 'active': ''">
+                    <a ng-click="selectType='DSLR'" href="">DSLR Cameras</a>
+                </li>
+                <li ng-class="(selectType=='compact')? 'active': ''">
+                    <a ng-click="selectType='compact'" href="">Compact Digital Cameras</a>
+                </li>
+                <li ng-class="(selectType=='MIRRORLESS')? 'active': ''">
+                    <a ng-click="selectType='MIRRORLESS'" href="">Mirrorless Cameras</a>
+                </li>
             </ul>
 
 
