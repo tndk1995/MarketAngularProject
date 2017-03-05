@@ -1,5 +1,5 @@
 angular.module('market', [
-    'ngRoute',
+    'ui.router',
     'marketHome',
     'marketMain'
 

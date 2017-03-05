@@ -6,7 +6,7 @@ html {
 
 @font-face {
     font-family: logoFont;
-    src: url('font/Melancholight Italic.ttf');
+    src: url('../font/Melancholight Italic.ttf');
 }
 
 .parallax {
@@ -32,7 +32,7 @@ html {
 
 .backgroundImg {
     position: absolute;
-    background-image: url('img/clem-onojeghuo-192729.jpg');
+    background-image: url('../img/clem-onojeghuo-192729.jpg');
     opacity: 0.5;
 }
 
@@ -69,10 +69,18 @@ html {
 
 /*MAIN PAGE*/
 
+.navbar {
+    box-shadow: 0 1px 5px #888888;
+}
+
 .navbar-brand {
+    /*padding-right: 35px!important;*/
+    margin-left: 20px!important;
     font-family: logoFont;
-    font-size: 37px!important;
+    font-size: 45px!important;
     padding-top: 13px!important;
+    color: #355C7D!important;
+    text-shadow: 2px 2px 3px #ddd;
 }
 
 
@@ -84,3 +92,13 @@ html {
     float: right;
     margin-top: 10px;
 }*/
+
+.thumbnail {
+    box-shadow: 3px 3px 8px #888888;
+    padding: 0!important;
+    border: 0!important;
+}
+
+.caption {
+    border: 1px solid #ddd;
+}

@@ -1,0 +1,21 @@
+[{
+    "type": "DSLR",
+    "id": "CanonEOS80D",
+    "name": "Canon EOS 80D",
+    "imgUrl": "market/components/cameras/img/CanonEOS80D.jpg"
+}, {
+    "type": "DSLR",
+    "id": "CanonEOS1300D",
+    "name": "Canon EOS 1300D",
+    "imgUrl": "market/components/cameras/img/CanonEOS1300D.jpg"
+}, {
+    "type": "DSLR",
+    "id": "CanonEOS750D",
+    "name": "Canon EOS 750D",
+    "imgUrl": "market/components/cameras/img/CanonEOS750D.jpg"
+}, {
+    "type": "MIRRORLESS",
+    "id": "CanonEOS1DXMarkII",
+    "name": "Canon EOS 1DX Mark II",
+    "imgUrl": "market/components/cameras/img/CanonEOS1DXMarkII.png"
+}]

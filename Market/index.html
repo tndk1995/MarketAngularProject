@@ -5,27 +5,31 @@
     <title></title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link href="css/style.css" rel="stylesheet">
+    <link href="assets/css/style.css" rel="stylesheet">
     <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.css" />
 
     <script src="bower_components/angular/angular.js"></script>
-    <script src="bower_components/angular-route/angular-route.js"></script>
     <script src="bower_components/jquery/dist/jquery.js"></script>
     <script src="bower_components/bootstrap/dist/js/bootstrap.js"></script>
+    <script src="bower_components/angular-ui-router/release/angular-ui-router.js"></script>
 
     <script type="text/javascript" src="market/market.module.js"></script>
-    <script type="text/javascript" src="market/market.config.js"></script>
-    <script type="text/javascript" src="market/market.process.js"></script>
+    <script type="text/javascript" src="market/market.route.js"></script>
+    <script type="text/javascript" src="market/shared/directive/market.directive.js"></script>
 
-    <script type="text/javascript" src="market/market-home/market-home.module.js"></script>
-    <script type="text/javascript" src="market/market-home/market-home.component.js"></script>
+    <script type="text/javascript" src="market/components/market-home/market-home.module.js"></script>
+    <script type="text/javascript" src="market/components/market-home/market-home.route.js"></script>
 
-    <script type="text/javascript" src="market/market-main/market-main.module.js"></script>
-    <script type="text/javascript" src="market/market-main/market-main.component.js"></script>
+    <script type="text/javascript" src="market/components/market-main/market-main.module.js"></script>
+    <script type="text/javascript" src="market/components/market-main/market-main.controller.js"></script>
+    <script type="text/javascript" src="market/components/market-main/market-main.route.js"></script>
+
+    <script type="text/javascript" src="market/components/market-detail/market-detail.module.js"></script>
+    <script type="text/javascript" src="market/components/market-detail/market-detail.route.js"></script>
 </head>
 
 <body>
-    <ng-view></ng-view>
+    <ui-view></ui-view>
 </body>
 
 </html>
