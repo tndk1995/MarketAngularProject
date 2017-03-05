@@ -14,17 +14,17 @@
         <!-- Collect the nav links, forms, and other content for toggling -->
         <div class="collapse navbar-collapse navbar-right" id="navbarCollapse">
             <ul class="nav navbar-nav">
-                <li ng-class="(selectType=='')? 'active': ''">
-                    <a ng-click="selectType=''" href="">All Cameras</a>
+                <li ng-class="(type=='')? 'active': ''">
+                    <a ng-click="selectType('')" href="">All Cameras</a>
                 </li>
-                <li ng-class="(selectType=='DSLR')? 'active': ''">
-                    <a ng-click="selectType='DSLR'" href="">DSLR Cameras</a>
+                <li ng-class="(type=='DSLR')? 'active': ''">
+                    <a ng-click="selectType('DSLR')" href="">DSLR Cameras</a>
                 </li>
-                <li ng-class="(selectType=='compact')? 'active': ''">
-                    <a ng-click="selectType='compact'" href="">Compact Digital Cameras</a>
+                <li ng-class="(type=='compact')? 'active': ''">
+                    <a ng-click="selectType('compact')" href="">Compact Digital Cameras</a>
                 </li>
-                <li ng-class="(selectType=='MIRRORLESS')? 'active': ''">
-                    <a ng-click="selectType='MIRRORLESS'" href="">Mirrorless Cameras</a>
+                <li ng-class="(type=='MIRRORLESS')? 'active': ''">
+                    <a ng-click="selectType('MIRRORLESS')" href="">Mirrorless Cameras</a>
                 </li>
             </ul>
 
@@ -41,7 +41,7 @@
     </nav>
     <ui-view>
         <div class="row ">
-            <div class="col-md-6 " ng-repeat="camera in cameras | filter: search | filter:{type:selectType}">
+            <div class="col-md-6 " ng-repeat="camera in cameras | filter: search | filter:{type:type}">
                 <div class="thumbnail">
                     <img ng-src="{{camera.imgUrl}}">
                     <div class="caption">
