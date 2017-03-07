@@ -40,8 +40,8 @@
 
     </nav>
     <ui-view>
-        <div class="row ">
-            <div class="col-md-6 " ng-repeat="camera in cameras | filter: search | filter:{type:type}">
+        <div class="row .camera-item-list">
+            <div class="camera-item" ng-repeat="camera in cameras | filter: search | filter:{type:type}">
                 <div class="thumbnail">
                     <img ng-src="{{camera.imgUrl}}">
                     <div class="caption">
