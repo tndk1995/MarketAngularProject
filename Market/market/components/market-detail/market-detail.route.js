@@ -5,6 +5,7 @@ function marketDetailConfig($stateProvider) {
     $stateProvider
         .state('store.detail', {
             url: '/:id',
-            templateUrl: 'market/components/market-detail/market-detail.html'
+            templateUrl: 'market/components/market-detail/market-detail.html',
+            controller: marketDetailController
         })
 };
