@@ -40,7 +40,7 @@
 </nav>
 <ui-view>
     <div class="row container-fluid">
-        <div class="col-md-6 " ng-repeat="camera in cameras | filter: search | filter:{type:type}">
+        <div class="camera-item" ng-repeat="camera in cameras | filter: search | filter:{type:type}">
             <div class="thumbnail">
                 <img ng-src="{{camera.imgUrl}}">
                 <div class="caption">
@@ -48,7 +48,9 @@
                     <p>{{camera.type}} CAMERA</p>
                     <a ui-sref="store.detail({id:'{{camera.id}}'})" class="btn btn-primary" role="button">View Gallary</a>
                 </div>
+
             </div>
         </div>
     </div>
+
 </ui-view>

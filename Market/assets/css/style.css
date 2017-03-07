@@ -86,6 +86,14 @@ html {
 
 .row {
     margin-top: 20px;
+    column-width: auto !important;
+    column-count: 2;
+}
+
+@media (max-width: 768px) {
+    .row {
+        column-count: 1;
+    }
 }
 
 .thumbnail {
@@ -96,6 +104,10 @@ html {
 
 .caption {
     border: 1px solid #ddd;
+}
+
+.camera-item {
+    display: inline-block;
 }
 
 
