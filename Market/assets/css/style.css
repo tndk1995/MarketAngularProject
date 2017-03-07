@@ -102,3 +102,11 @@ html {
 .caption {
     border: 1px solid #ddd;
 }
+
+.camera-item {
+    display: inline-block;
+}
+
+.row{
+    column-width: 25em !important;
+}
