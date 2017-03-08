@@ -7,7 +7,7 @@
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
       </button>
-        <a class="navbar-brand">Camera Store</a>
+        <a class="navbar-brand" ui-sref="home">Camera Store</a>
     </div>
 
     <!-- Collect the nav links, forms, and other content for toggling -->
@@ -20,10 +20,10 @@
                 <a ng-click="selectType('DSLR')" ui-sref="store">DSLR Cameras</a>
             </li>
             <li ng-class="(type=='compact')? 'active': ''">
-                <a ng-click="selectType('compact')" ui-sref="store">Compact Digital Cameras</a>
+                <a ng-click="selectType('Compact')" ui-sref="store">Compact Digital Cameras</a>
             </li>
-            <li ng-class="(type=='MIRRORLESS')? 'active': ''">
-                <a ng-click="selectType('MIRRORLESS')" ui-sref="store">Mirrorless Cameras</a>
+            <li ng-class="(type=='Mirrorless')? 'active': ''">
+                <a ng-click="selectType('Mirrorless')" ui-sref="store">Mirrorless Cameras</a>
             </li>
         </ul>
 
@@ -39,7 +39,7 @@
 
 </nav>
 <ui-view>
-    <div class="row mainRow container-fluid">
+    <div class=" mainRow container-fluid">
         <div class="camera-item" ng-repeat="camera in cameras | filter: search | filter:{type:type}">
             <div class="thumbnail">
                 <img ng-src="{{camera.imgUrl}}">

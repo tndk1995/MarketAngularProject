@@ -84,13 +84,14 @@ html {
     text-shadow: 2px 2px 3px #ddd;
 }
 
-.row {
-    margin-top: 20px;
+.navbar-right {
+    margin-right: 0!important;
 }
 
 .mainRow {
     column-width: auto !important;
     column-count: 2;
+    margin-top: 20px;
 }
 
 @media (max-width: 768px) {
@@ -137,6 +138,10 @@ html {
     width: 100%;
 }
 
+.detailHeader .btn-default {
+    white-space: normal;
+}
+
 .detailCover {
     overflow: hidden;
     width: 100%;
@@ -173,4 +178,9 @@ html {
 .detailGallary>.thumbnail {
     background-color: #222222!important;
     padding-top: 10px;
+}
+
+.detailGallary>.thumbnail>div {
+    display: table;
+    padding-top: 20px;
 }
